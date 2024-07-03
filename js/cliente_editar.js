@@ -5,14 +5,14 @@ const { createApp } = Vue
   createApp({ 
     data() {
       return {
-        id:0,
-        nombre:"",
-        apellido:"", 
-        fecha_nacimiento:"",
-        categoria_plan:"",
-        imagen:"",
-        url:'https://tpf24178.pythonanywhere.com/Clientes/'+id,
-       }  
+        id: 0,
+        nombre: "",
+        apellido: "",
+        fecha_nacimiento: "",
+        categoria_plan: "",
+        imagen: "",
+        url: "https://usercodo24178.pythonanywhere.com/clientes/"+ id,
+      };  
     },
     methods: {
         fetchData(url) {

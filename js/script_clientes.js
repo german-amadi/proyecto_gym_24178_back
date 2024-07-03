@@ -3,9 +3,9 @@ const { createApp } = Vue
     data() {
       return {
         Cliente: [],
-        //url:'http://localhost:5000/productos',
+        // url: "http://127.0.0.1:5000/clientes",
         // si el backend esta corriendo local  usar localhost 5000(si no lo subieron a pythonanywhere)
-        url: "https://tpf24178.pythonanywhere.com/Clientes", // si ya lo subieron a pythonanywhere
+        url: "https://usercodo24178.pythonanywhere.com/clientes", // si ya lo subieron a pythonanywhere
         error: false,
         cargando: true,
         /*atributos para el guardar los valores del formulario */
@@ -60,6 +60,7 @@ const { createApp } = Vue
           categoria_plan: this.categoria_plan,
           imagen: this.imagen,
         };
+        console.log(Cliente);
         var options = {
           body: JSON.stringify(Cliente),
           method: "POST",
