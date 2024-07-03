@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/favicom.png">
+    <style>
+        /* Estilos para el fondo de la imagen */
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./images/pexels-victorfreitas-949126.jpg); /* URL de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(2px); /* Aplicar desenfoque a la imagen */
+            z-index: -1;
+        }
+
+        /* Estilos para centrar el contenido */
+        .centered-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #fff; /* Color del texto del encabezado */
+        }
+
+        /* Estilo para el botón */
+        .btn-custom {
+            font-size: 1.5rem;
+            padding: 10px 20px;
+        }
+
+        /* Estilo para el encabezado */
+        .heading {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Borde negro */
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen de fondo -->
+    <div class="background-image"></div>
+
+    <!-- Contenido centrado -->
+    <div class="container centered-content">
+        <h1 class="heading">Registro de Clientes</h1>
+        <a href=clientes.html class="btn btn-warning text-dark font-weight-bold btn-custom">Ingresar</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
